@@ -46,7 +46,8 @@ def getConvexHullPt(location, ptArr, startPt, endPt):
         else:
             cvxHullPtBelow.extend([startPt])
             cvxHullPtBelow.extend([endPt])
-    # The basis of the algorithm will assign 2 points that made the line as convex hull point if there's no point found above/below the line 
+    # The basis of the algorithm will assign 2 points that made the line as convex hull point if there's no point found 
+    # above/below the line 
 
     #RECURSIVE
     else:
@@ -93,7 +94,8 @@ def myConvexHull(arr):
             ptAbove.append(point)
         else:
             ptBelow.append(point)
-    # Divide the points from the array to 2 sides by checking their location (above or below the line) and append it to ptAbove/ptBelow
+    # Divide the points from the array to 2 sides by checking their location (above or below the line) 
+    # and append it to ptAbove/ptBelow
  
     getConvexHullPt("A",ptAbove,ptLeft,ptRight)
     getConvexHullPt("B",ptBelow,ptRight,ptLeft)
