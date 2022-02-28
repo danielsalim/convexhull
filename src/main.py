@@ -4,19 +4,19 @@ from sklearn import datasets
 from cvxhull import *
 
 iris = datasets.load_iris()
-bc = datasets.load_breast_cancer()
-wine = datasets.load_wine()
+# bc = datasets.load_breast_cancer()
+# wine = datasets.load_wine()
 # Load datasets
 
 iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
 iris_df['Target'] = pd.DataFrame(iris.target)
 
-bc_df = pd.DataFrame(bc.data, columns=bc.feature_names)
-bc_df['Target'] = pd.DataFrame(bc.target)
+# bc_df = pd.DataFrame(bc.data, columns=bc.feature_names)
+# bc_df['Target'] = pd.DataFrame(bc.target)
 
-wine_df = pd.DataFrame(wine.data, columns=wine.feature_names)
-wine_df['Target'] = pd.DataFrame(wine.target)
-# Creating dataframe
+# wine_df = pd.DataFrame(wine.data, columns=wine.feature_names)
+# wine_df['Target'] = pd.DataFrame(wine.target)
+## Creating dataframe
 
 plt.figure(figsize = (10, 6))
 plt.title('Sepal Width VS Sepal Length')
