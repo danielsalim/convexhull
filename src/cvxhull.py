@@ -33,10 +33,10 @@ def isArrEmpty(arr):
         return "Empty"
 
 def getConvexHullPt(location, ptArr, startPt, endPt):
-    #ptArr is either ptAbove or ptBelow
-    #startPt is the starting point of the line, either ptLeft or ptRight
-    #endPt is the end point of the line, either ptLeft or ptRight
-    #location can be TOP or BOTTOM depends on ptArr
+    # ptArr is either ptAbove or ptBelow
+    # startPt is the starting point of the line, either ptLeft or ptRight
+    # endPt is the end point of the line, either ptLeft or ptRight
+    # location can be TOP or BOTTOM depends on ptArr
     
     #BASIS
     if(isArrEmpty(ptArr) == "Empty"):
